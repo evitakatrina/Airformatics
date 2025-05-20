@@ -737,8 +737,66 @@ body {
 }
 
 @media (max-width: 600px) {
-    .header-inner,
-    .hero-content,
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    .logo-area {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .main-nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-links a {
+        font-size: 1.3rem;
+        padding: 0.3rem 0;
+    }
+    .hero-title {
+        font-size: clamp(2rem, 7vw, 2.7rem);
+        width: 100%;
+        line-height: 1.15;
+        margin-bottom: 2vw;
+        white-space: pre-line;
+        text-align: center;
+    }
+    .hero-cta-text {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        color: var(--accent);
+        text-align: center;
+        line-height: 1.4;
+    }
+    .hero-content {
+        padding: 4vw 1rem 1rem 1rem;
+        min-height: 60vh;
+        gap: 1.2rem;
+    }
+    .hero-action-btn {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.7rem;
+        margin: 0 0.1rem 0.7rem 0.1rem;
+        width: 90vw;
+        max-width: 320px;
+        min-width: 120px;
+        border-width: 2px;
+    }
+    .section-title {
+        font-size: 2rem;
+        margin: 8vw 0 4vw 0;
+    }
     .how-it-works-content,
     .key-features-content,
     .pricing-grid,
@@ -763,27 +821,6 @@ body {
     }
     .feature-block, .how-step, .pricing-card {
         box-sizing: border-box;
-    }
-    .section-title {
-        font-size: 2rem;
-        margin: 8vw 0 4vw 0;
-    }
-    .hero-title {
-        font-size: 2.2rem;
-        width: 100%;
-        line-height: 1.1;
-        margin-bottom: 2vw;
-    }
-    .hero-content {
-        padding: 4vw 1rem 1rem 1rem;
-        min-height: 60vh;
-    }
-    .hero-action-btn {
-        font-size: 1rem;
-        padding: 0.7rem 1rem;
-        margin: 0 0.2rem 0.7rem 0.2rem;
-        width: 100%;
-        max-width: 300px;
     }
     .how-step, .feature-block, .pricing-card {
         padding: 5vw 4vw;
